@@ -1,0 +1,20 @@
+{
+  "name": "sysplay",
+  "version": "1.0.0",
+  "description": "simulator for operational systems",
+  "main": "back-end/src/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node  back-end/src/app.js"
+  },
+  "author": "carlos alessandro",
+  "license": "ISC",
+  "engines":{
+    "node": "14.x"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.1",
+    "express": "^4.18.2",
+    "nodemon": "^3.0.3"
+  }
+}

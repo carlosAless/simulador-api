@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SysPlay</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&family=Quicksand:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+  <script defer src="./js/script.js"></script>
+</head>
+
+<body>
+
+  <header id="header">
+
+    <div class="titulo">
+      <h1><span>></span>SysPlay<span>.</span></h1>
+    </div>
+
+  </header>
+
+  <section id="section">
+
+    <header>
+
+      <div class="titulo">
+        <h2>Problemas em IPC</h2>
+      </div>
+
+      <div class="problema">
+        <label for="problema">Problema</label>
+        <select value="" id="problema">
+
+          <option selected name="jantar" id="jantar">Jantar dos filofoso</option>
+
+        </select>
+      </div>
+
+      <div class="solucao">
+
+        <label for="solucao">Solução</label>
+        <select value="solucao" id="solucao">
+          <option name="classica" id="classica">Clássica</option>
+        </select>
+
+      </div>
+      <div class="quantidadeFilosofo">
+
+        <button onclick="adicionarFilosofo()"><span>+</span> Adicionar filosofo </button>
+
+      </div>
+
+      <div class="operacoes">
+        <button onclick="iniciar()">Iniciar</button>
+        <button onclick="parar()">Parar</button>
+
+      </div>
+
+      <div class="ajuste">
+        <img src="img/ajuste.png" alt="ajuste">
+      </div>
+
+    </header>
+
+    <main id="mainContent">
+
+
+
+      <div class="containerMesa">
+
+        <div class="mesa">
+
+        </div>
+
+      </div>
+
+    </main>
+
+
+
+
+
+  </section>
+
+  <footer>
+
+    <div class="systems">
+
+      <div class="linux">
+        <img src="img/linux.svg" alt="linux">
+      </div>
+
+      <div class="windows">
+        <div class="fr1">
+          <div class="frame"></div>
+          <div class="frame"></div>
+        </div>
+        <div class="fr2">
+          <div class="frame"></div>
+          <div class="frame"></div>
+        </div>
+      </div>
+
+      <div class="apple">
+        <img src="img/apple.png" alt="apple">
+      </div>
+
+
+    </div>
+
+    <span>
+      &copy;2024 - Carlos Alessandro
+    </span>
+
+  </footer>
+
+
+  <div class="modal">
+    <div class="content">
+      <label for="tempoPensando">Tempo Pensando:</label>
+      <input type="range" id="tempoPensando" name="tempoPensando" min="1" max="60" value="1">
+      <output for="tempoPensando"></output>
+
+      <div class="containerExato">
+        <label for="exatoPensar" class="label">Valor exato</label>
+        <input type="checkbox" name="exato" id="exatoPensar" value="valor exato">
+      </div>
+
+
+      <div style="display: none;">
+        <label for="tempoFome">Tempo Fome:</label>
+        <input type="range" id="tempoFome" name="tempoFome" min="1" max="60" value="1">
+        <output for="tempoFome"></output>
+
+        <div class="containerExato">
+          <label for="exatoFome" class="label">Valor exato</label>
+          <input type="checkbox" name="exato" id="exatoFome" value="valor exato">
+        </div>
+      </div>
+
+
+
+      <label for="tempoComendo">Tempo Comendo:</label>
+      <input type="range" id="tempoComendo" name="tempoComendo" min="1" max="60" value="1">
+      <output for="tempoComendo"></output>
+
+      <div class="containerExato">
+        <label for="exatoComer" class="label">valor exato</label>
+        <input type="checkbox" name="exato" id="exatoComer" value="valor exato">
+      </div>
+
+
+      <div class="btns">
+        <input type="button" class="btnOk" value="Ok">
+        <input type="button" class="btnCancelar" value="Cancelar">
+      </div>
+    </div>
+  </div>
+
+
+
+
+</body>
+
+</html>

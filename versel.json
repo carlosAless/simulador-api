@@ -1,0 +1,17 @@
+{
+    "version": 2,
+  
+    "routes": [ 
+      { "handle": "filesystem" }, 
+      { "src": "./back-end/src/app.js"}
+    ],
+  
+    "env": {
+      "NODE_ENV": "production"
+    },
+  
+    "builds": [ 
+      { "src": "public/**", "use": "@vercel/static" },
+      { "src": "api/**", "use": "@vercel/node" } 
+    ]
+  }
